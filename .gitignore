@@ -1,5 +1,4 @@
 node_modules
-!/src/scanner.c
 *.swp
 /build
 Cargo.lock
