@@ -5,6 +5,7 @@
 
 # tree-sitter-swift
 ## tree-sitter 0.20.8 기반
+forked from [alex-pinkus/tree-sitter-swift](https://github.com/alex-pinkus/tree-sitter-swift)<br>
 This contains a [`tree-sitter`](https://tree-sitter.github.io/tree-sitter) grammar for the Swift programming language.
 
 # 변경점
@@ -16,8 +17,8 @@ This contains a [`tree-sitter`](https://tree-sitter.github.io/tree-sitter) gramm
 0. git clone한 parser 디렉토리로 이동
    ```
    cd /your_home_directory/source
-   git clone {언어별(c, cpp, go, objective-c, swift) 파서 레포지토리}
-   cd ./{언어별(c, cpp, go, objective-c, swift) 파서 레포지토리}
+   git clone {swift 파서 레포지토리}
+   cd ./{swift 파서 레포지토리}
    ```
 1. tree-sitter generate
    ```
