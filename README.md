@@ -9,7 +9,7 @@ This contains a [`tree-sitter`](https://tree-sitter.github.io/tree-sitter) gramm
 
 # 변경점
 * parsing 용이하도록 문법 변경 (기존 문법에 없던 parameter_list 추가)
-* `parser.c` 오류나지 않도록 미리 파일 추가 완료 (['parser.c'오류](##-frequently-asked-questions))
+* `parser.c` 오류나지 않도록 미리 파일 추가 완료
 * 변경된 부분 [link](https://github.com/alex-pinkus/tree-sitter-swift/compare/main...syrose01:tree-sitter-swift:main)
 
 ## tree-sitter parser generate 방법
