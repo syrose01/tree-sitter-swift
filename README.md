@@ -4,9 +4,39 @@
 [![Build](https://github.com/alex-pinkus/tree-sitter-swift/actions/workflows/top-repos.yml/badge.svg)](https://github.com/alex-pinkus/tree-sitter-swift/actions/workflows/top-repos.yml)
 
 # tree-sitter-swift
-
+## tree-sitter 0.20.8 기반
 This contains a [`tree-sitter`](https://tree-sitter.github.io/tree-sitter) grammar for the Swift programming language.
 
+# 변경점
+* parsing 용이하도록 문법 변경 (기존 문법에 없던 parameter_list 추가)
+* 변경된 부분 [link](https://github.com/alex-pinkus/tree-sitter-swift/compare/main...syrose01:tree-sitter-swift:main)
+
+## tree-sitter parser generate 방법
+0. git clone한 parser 디렉토리로 이동
+   ```
+   cd /your_home_directory/source
+   git clone {언어별(c, cpp, go, objective-c, swift) 파서 레포지토리}
+   cd ./{언어별(c, cpp, go, objective-c, swift) 파서 레포지토리}
+   ```
+1. tree-sitter generate
+   ```
+   tree-sitter generate
+   ```
+
+## tree-sitter-swift 사용 방법
+0. 코드가 있는 디렉토리로 이동
+   ```
+   cd /your_directory/
+   ```
+1. 코드 parsing
+   ```
+   tree-sitter parse ./your_code.swift
+   ```
+2. query 적용
+   ```
+   tree-sitter ./query your_query.scm ./your_code.swift
+   ```
+   
 ## Getting started
 
 To use this parser to parse Swift code, you'll want to depend on either the Rust crate or the NPM package.
